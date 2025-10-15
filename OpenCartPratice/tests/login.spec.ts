@@ -14,7 +14,7 @@ await login.submitFormLogin();
 await testoptions.attach('login',{
       body: await page.screenshot(), 
       contentType:'jhonny.png'})
-
+await page.screenshot({path:'Screenshots/login_dashboard.png'})
 });
 
 test ('logiApplication1', async({page}, testInfo) => {
